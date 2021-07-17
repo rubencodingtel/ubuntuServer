@@ -14,4 +14,8 @@ sudo wget "https://raw.githubusercontent.com/ProtonVPN/scripts/master/update-res
 
 sudo chmod +x "/etc/openvpn/update-resolv-conf"
 
+sudo netstat -ltnp | grep sshd
+
+sudo ufw allow port /tcp
+
 exit
